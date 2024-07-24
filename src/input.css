@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#create-figma-plugin {
+  height: 100vh;
+}
+
+.table-row {
+  @apply grid text-left border-figma-border text-figma-base gap-4 p-4 border-b;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) 20%;
+}
+
+.table-thead-row {
+    @apply table-row;
+    @apply py-2;
+}
+
+.table-cell {
+  @apply flex items-center;
+}
